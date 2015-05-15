@@ -1,3 +1,4 @@
+/* @import "reset"; */
 html {
   box-sizing: border-box; }
 
@@ -6,16 +7,6 @@ html {
 *::before {
   box-sizing: inherit; }
 
-/* @mixin clearfix {
-    * zoom: 1;
-    &:before, &:after {
-        content: "";
-        display: table;
-    }
-    &:after {
-        clear: both;
-    }
-} */
 * {
   box-sizing: border-box; }
 
@@ -26,7 +17,7 @@ html {
   top:1px;
 }// */
 body {
-  max-width: 230px;
+  max-width: 500px;
   margin-left: auto;
   margin-right: auto; }
   body::after {
@@ -55,40 +46,43 @@ body {
   .display:last-child {
     margin-right: 0; }
 
-.clrMinusPercent button {
+.clrminuspercent {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 23.23176%;
   margin-right: 0;
   background-color: RGBA(102, 153, 153, 1); }
-  .clrMinusPercent button:last-child {
+  .clrminuspercent:last-child {
     margin-right: 0; }
 
-.numberKeys button {
+.number {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 23.23176%;
+  margin-right: 0;
   background-color: RGBA(224, 224, 224, 1); }
-  .numberKeys button:last-child {
+  .number:last-child {
     margin-right: 0; }
 
-.zero button {
+.zero {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%;
+  margin-right: 0;
   background-color: RGBA(224, 224, 224, 1); }
-  .zero button:last-child {
+  .zero:last-child {
     margin-right: 0; }
 
-.operations button {
+.operations {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 23.23176%;
+  margin-right: 0;
   background-color: RGBA(13, 77, 77, 1);
   color: #fff; }
-  .operations button:last-child {
+  .operations:last-child {
     margin-right: 0; }
