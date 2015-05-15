@@ -1,0 +1,60 @@
+
+$visual-grid:true;
+
+@import
+ '../bower_components/bourbon/app/assets/stylesheets/bourbon';
+@import '../bower_components/neat/app/assets/stylesheets/neat';
+/* @mixin clearfix {
+    * zoom: 1;
+    &:before, &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+} */
+
+@import "variables";
+//@import "typography";
+ //
+
+*{
+  box-sizing: border-box;
+}
+
+//230 X 321.myButton {
+
+/* //.myButton:hover {
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+}// */
+
+body {
+  @include outer-container(230px);
+
+}
+
+//60x50 buttons//
+
+.buttons {
+  height:50px;
+}
+
+.display {
+  @include span-columns(9);
+}
+
+.clrMinusPercent {
+  @include span-columns(9 of 12);
+}
+
+.numberKeys {
+  @include span-columns(9 of 12);
+}
+
+.operations {
+  @include span-columns(3 of 12);
+}
