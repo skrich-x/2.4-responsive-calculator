@@ -2,11 +2,12 @@
 /* @import "reset"; */
 @import
  '../bower_components/bourbon/app/assets/stylesheets/bourbon';
+$gutter:0em;
 @import '../bower_components/neat/app/assets/stylesheets/neat';
 
 
 @import "variables";
-//@import "typography";
+@import "typography";
  //
 
 *{
@@ -30,14 +31,15 @@ body {
 .container{
   border: 2px solid RGBA(0, 51, 51, 1);
   border-radius: 10px;
+  background-color: RGBA(102, 153, 153, .3);
 }
 
 .buttons {
   height:330px;
 }
 
-.buttons button{
-  height:48px;
+.buttons button {
+  height: 48px;
   border: 1px solid grey;
 }
 
@@ -45,33 +47,34 @@ body {
   @include span-columns(12);
   background-color:RGBA(76, 76, 76, .5);
   height: 80px;
+  text-align:right;
+  color:white;
+  font-weight: 100;
+  line-height: 80px;
+  margin:none;
   }
 
-.clrminuspercent{
-
+.clrminuspercent {
   @include span-columns(3);
-  @include omega();
-  background-color: $primary-clrMinusPercent-color;
+  background-color: $background-color-clrminuspercent;
+  }
 
-}
-
-.number{
+.number {
   @include span-columns(3);
-  @include omega();
+
   background-color:$primary-numberkeys-color;
 }
 
-.zero{
+.zero {
 
   @include span-columns(6);
-  @include omega();
-  background-color:$primary-numberkeys-color;
+ background-color:$primary-numberkeys-color;
 }
 
 
 .operations{
   @include span-columns(3);
-  @include omega();
-  background-color:$primary-operator-color;
+/*   @include omega();
+ */  background-color:$primary-operator-color;
   color:$operator-font-color;
 }
